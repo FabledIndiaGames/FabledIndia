@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            max-width: 90%;
-            width: 1100px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Full-screen background color or image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Ensures no scrollbars */
+}
+
+.container {
+    max-width: 90%;
+    width: 1100px;
+    padding: 20px;
+    text-align: center;
+    /* Remove background color, border-radius, and box-shadow */
+}
+
         .profile-image {
             border-radius: 50%;
             width: 120px;
@@ -54,21 +54,29 @@
         .social-links a:hover {
             text-decoration: underline;
         }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h6 style="color: #cccccc;">Indian Game Development Studio</h6>
+        <h2 style="color: #cccccc;">Indian Game Development Studio</h2>
         <img src="https://pbs.twimg.com/profile_images/1828704492629729280/lLT-J257_400x400.jpg" alt="Profile Image" class="profile-image">
         <h1>Fabled India Games</h1>
         <h2>Crafting immersive adventures inspired by India's rich legends and myths.</h2>
         <div class="social-links">
             <a href="https://twitter.com/fabledindia" target="_blank">Twitter</a>
-            <a href="https://www.youtube.com/@fabledindiagames" target="_blank">Youtube</a>
+            <a href="https://www.youtube.com/@fabledindiagames" target="_blank">YouTube</a>
             <a href="https://medium.com/@fabledindia" target="_blank">Blog</a>
             <a href="https://ko-fi.com/fabledindiagames" target="_blank">Ko-fi Donation</a>
         </div>
-        <p>&copy; 2024 Fabled India Games. All rights reserved.</p>
+        <footer>
+            <p>&copy; 2024 Fabled India Games. All rights reserved.</p>
+        </footer>
     </div>
 </body>
 </html>
