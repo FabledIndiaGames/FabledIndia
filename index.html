@@ -8,14 +8,14 @@
     <meta name="keywords" content="How to make mobile games in Unity, Best online courses for game development in India, How to make Android games in hindi, Learn game development in Hindi, Hindi game development tutorials, Game development training college in India, Top game development courses in India, How to create games using Unreal Engine in Hindi, Game development bootcamps in India, Game design and development in India, Best Indian Games, Top 10 Indian Games, Top Indian Game Studios">
     <link rel="stylesheet" href="paper.css">
     <style>
-        /* Ensure body takes up the full height and has no margins */
+	
+		
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            overflow-x: hidden; /* Prevent horizontal overflow */
+            overflow-x: hidden;
         }
 
-        /* Centering elements on the homepage */
         #home {
             height: 100vh;
             display: flex;
@@ -23,20 +23,20 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 20px; /* Add padding to ensure content doesn't touch edges */
+            padding: 20px;
         }
 
         .seo-text {
-            font-size: 1.2rem; /* Adjust font size for readability */
+            font-size: 1.2rem;
             color: gray;
-            margin-top: 20px; /* Ensure there's enough space from the top */
+            margin-top: 20px;
         }
 
         .logo {
-            width: 150px; /* Set width */
-            height: 150px; /* Set height to be equal to width */
-            border-radius: 50%; /* Make the image round */
-            object-fit: cover; /* Ensure the image covers the container */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
             margin: 20px 0;
         }
 
@@ -51,47 +51,16 @@
             color: #555;
         }
 
-        /* Navigation styling */
-        nav {
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
-            padding: 10px; /* Increase padding for better spacing */
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            display: flex;
-            justify-content: center;
-            z-index: 1000; /* Ensures navigation is always on top */
-        }
-
-        nav a {
-            margin: 0 10px;
-            font-size: 1rem; /* Adjust font size for readability */
-            color: #000;
-            text-decoration: none;
-            transition: opacity 0.3s; /* Smooth transition */
-        }
-
-        nav a:hover {
-            opacity: 1; /* Fully opaque on hover */
-        }
-
-        nav a:not(:hover) {
-            opacity: 0.7; /* Slightly transparent when not hovered */
-        }
-
-        /* Main content sections */
         .section {
-            padding: 60px 20px; /* Adjust padding to account for fixed navbar */
-            text-align: center; /* Center text in sections */
+            padding: 60px 20px;
+            text-align: center;
         }
 
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 15px;
             padding: 40px;
-            box-sizing: border-box; /* Include padding in width calculation */
         }
 
         .gallery img {
@@ -101,29 +70,21 @@
             border-radius: 8px;
         }
 
-        /* Contact section */
         .form-group {
-            margin-bottom: 15px; /* Space between form groups */
+            margin-bottom: 15px;
             display: flex;
             flex-direction: column;
-            align-items: flex-start; /* Align labels and inputs */
-        }
-
-        .form-group label {
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
+            align-items: flex-start;
         }
 
         .form-group input, .form-group textarea {
-            width: 100%; /* Full width inputs and textareas */
-            max-width: 500px; /* Set max-width to prevent overflow */
-            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
             padding: 8px;
-            margin-bottom: 10px; /* Space below inputs */
+            margin-bottom: 10px;
         }
 
-        /* Footer styles */
         footer {
             padding: 20px;
             background-color: #f8f9fa;
@@ -131,34 +92,53 @@
         }
 
         footer .social-buttons a {
-            margin: 0 10px; /* Space between social buttons */
+            margin: 0 10px;
             color: #000;
             text-decoration: none;
         }
 
+        /* Media Queries for Mobile Devices */
         @media (max-width: 768px) {
             .title {
                 font-size: 1.5rem;
             }
 
             .tagline {
+                font-size: 0.9rem;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+        }
+
+        @media (max-width: 481px) {
+            .seo-text {
                 font-size: 1rem;
             }
+
+            .logo {
+                width: 120px;
+                height: 120px;
+            }
+
+            .title {
+                font-size: 1.2rem;
+            }
+
+            .tagline {
+                font-size: 0.8rem;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#home" class="paper-btn btn-primary">Home</a>
-        <a href="#portfolio" class="paper-btn btn-primary">Portfolio</a>
-        <a href="#resume" class="paper-btn btn-primary">Resume</a>
-        <a href="#gallery" class="paper-btn btn-primary">Gallery</a>
-        <a href="#services" class="paper-btn btn-primary">Services</a>
-        <a href="#blog" class="paper-btn btn-primary">Blog</a>
-        <a href="#contact" class="paper-btn btn-primary">Contact</a>
-    </nav>
 
     <!-- Home Section -->
     <section id="home">
@@ -176,11 +156,10 @@
     </section>
 
     <!-- Portfolio Section -->
-<!-- Portfolio Section -->
-<section id="portfolio" class="section">
+	<section id="portfolio" class="section">
     <h6 class="title">Portfolio</h6>
     <p>Check out some of my past work.</p>
-    <h4>Skills:</h4>
+    <h8>Skills:</h8>
     <ul>
         <li>Unity3d and Godot (2D & 3D game design)</li>
         <li>Multiplayer (UNet, Photon/Bolt, Mirror)</li>
@@ -217,14 +196,13 @@
     </ul>
 </section>
 
-
     <!-- Resume Section -->
     <section id="resume" class="section">
         <h6 class="title">Resume</h6>
-        <p>Please email with your company email at support@fabledindia.com to request my professional resume. <a href="#contact"> email here</a>..</p>
+        <p>Please email with your company email at support@fabledindia.com to request my professional resume.</p>
     </section>
 
-    <!-- Gallery Section with 9 public domain images -->
+    <!-- Gallery Section -->
 <section id="gallery" class="section background-success">
     <h6 class="title">Gallery</h6>
     <div class="gallery">
@@ -258,42 +236,39 @@
     </div>
 </section>
 
-
     <!-- Services Section -->
     <section id="services" class="section">
-        <h2 class="title">Services</h2>
-        <p>I offer a variety of gaming services including Virtual Reality VR, Mobile, Web and Computer game design, web development, logo design, and consulting. I also offer game play testing, game live streaming on twitch, kick, youtube live.</p>
-     </section>
+        <h6 class="title">Services</h6>
+        <p>I offer a variety of gaming services including Virtual Reality VR, Mobile, Web and Computer game design, web development, logo design, and consulting.</p>
+    </section>
 
     <!-- Blog Section -->
     <section id="blog" class="section">
-        <h2 class="title">Blog</h2>
+        <h6 class="title">Blog</h6>
         <p>Read my game design and AI technology blog on <a href="https://medium.com/@fabledindia" target="_blank">Medium</a>.</p>
     </section>
 
-	<!-- Contact Section -->
-	<section id="contact" class="section" style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
-		<div class="contact-form-container" style="max-width: 600px; width: 100%;">
-			<h2 class="title">Contact</h2>
-			<form action="mailto:support@fabledindia.com" method="POST" enctype="multipart/form-data">
-				<div class="form-group">
-					<label for="name">Your Name:</label>
-					<input type="text" id="name" name="name" class="paper-input" required>
-				</div>
-				<div class="form-group">
-					<label for="email">Your Email:</label>
-					<input type="email" id="email" name="email" class="paper-input" required>
-				</div>
-				<div class="form-group">
-					<label for="message">Your Message:</label>
-					<textarea id="message" name="message" rows="4" class="paper-input no-resize" required></textarea>
-				</div>
-				<button type="submit" class="paper-btn btn-success">Send Email</button>
-			</form>
-		</div>
-	</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h6 class="title">Contact</h6>
+        <form action="mailto:support@fabledindia.com" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" class="paper-input" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" class="paper-input" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" class="paper-input no-resize" required></textarea>
+            </div>
+            <button type="submit" class="paper-btn btn-success">Send Email</button>
+        </form>
+    </section>
 
-    <!-- Footer with Social Buttons -->
+    <!-- Footer -->
     <footer>
         <h3>Connect with us</h3>
         <div class="social-buttons">
@@ -305,15 +280,8 @@
         </div>
         <p>&copy; 2024 FabledIndia.com. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScript to Open Images in Full Size -->
-    <script>
-        function openImage(imgElement) {
-            const imgSrc = imgElement.src;
-            const newWindow = window.open();
-            newWindow.document.write('<img src="' + imgSrc + '" style="width:100%; height:auto;">');
-        }
-    </script>
+	
+	
 
 </body>
 </html>
