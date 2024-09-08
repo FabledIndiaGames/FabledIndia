@@ -3,80 +3,315 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+    <title>Fabled India Games</title>
+    <meta name="description" content="Indian Game Development Studio Fabled India Games creates immersive games inspired by Indian History and Myths. Explore our portfolio, gallery, and services, contact us, phone number.">
+    <meta name="keywords" content="How to make mobile games in Unity, Best online courses for game development in India, How to make Android games in hindi, Learn game development in Hindi, Hindi game development tutorials, Game development training college in India, Top game development courses in India, How to create games using Unreal Engine in Hindi, Game development bootcamps in India, Game design and development in India, Best Indian Games, Top 10 Indian Games, Top Indian Game Studios">
+    <link rel="stylesheet" href="paper.css">
     <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #fff; /* Full-screen background color or image */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden; /* Ensures no scrollbars */
-}
-
-.container {
-    max-width: 90%;
-    width: 1100px;
-    padding: 20px;
-    text-align: center;
-    /* Remove background color, border-radius, and box-shadow */
-}
-
-        .profile-image {
-            border-radius: 50%;
-            width: 120px;
-            height: 120px;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        h1 {
+        /* Ensure body takes up the full height and has no margins */
+        body {
             margin: 0;
-            font-size: 2.8em;
-            color: #333;
+            font-family: Arial, sans-serif;
+            overflow-x: hidden; /* Prevent horizontal overflow */
         }
-        h2 {
-            margin: 10px 0;
-            font-size: 1.2em;
-            color: #666;
+
+        /* Centering elements on the homepage */
+        #home {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px; /* Add padding to ensure content doesn't touch edges */
         }
-        .social-links {
+
+        .seo-text {
+            font-size: 1.2rem; /* Adjust font size for readability */
+            color: gray;
+            margin-top: 20px; /* Ensure there's enough space from the top */
+        }
+
+        .logo {
+            width: 150px; /* Set width */
+            height: 150px; /* Set height to be equal to width */
+            border-radius: 50%; /* Make the image round */
+            object-fit: cover; /* Ensure the image covers the container */
             margin: 20px 0;
         }
-        .social-links a {
-            margin: 0 8px;
+
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .tagline {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Navigation styling */
+        nav {
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+            padding: 10px; /* Increase padding for better spacing */
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            z-index: 1000; /* Ensures navigation is always on top */
+        }
+
+        nav a {
+            margin: 0 10px;
+            font-size: 1rem; /* Adjust font size for readability */
+            color: #000;
             text-decoration: none;
-            color: #007bff;
-            font-size: 1.1em;
+            transition: opacity 0.3s; /* Smooth transition */
         }
-        .social-links a:hover {
-            text-decoration: underline;
+
+        nav a:hover {
+            opacity: 1; /* Fully opaque on hover */
         }
+
+        nav a:not(:hover) {
+            opacity: 0.7; /* Slightly transparent when not hovered */
+        }
+
+        /* Main content sections */
+        .section {
+            padding: 60px 20px; /* Adjust padding to account for fixed navbar */
+            text-align: center; /* Center text in sections */
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid */
+            gap: 15px;
+            padding: 40px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        /* Contact section */
+        .form-group {
+            margin-bottom: 15px; /* Space between form groups */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align labels and inputs */
+        }
+
+        .form-group label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%; /* Full width inputs and textareas */
+            max-width: 500px; /* Set max-width to prevent overflow */
+            box-sizing: border-box; /* Include padding and border in element's total width and height */
+            padding: 8px;
+            margin-bottom: 10px; /* Space below inputs */
+        }
+
+        /* Footer styles */
         footer {
+            padding: 20px;
+            background-color: #f8f9fa;
             text-align: center;
-            margin-top: 20px;
-            font-size: 0.9em;
-            color: #666;
+        }
+
+        footer .social-buttons a {
+            margin: 0 10px; /* Space between social buttons */
+            color: #000;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 1.5rem;
+            }
+
+            .tagline {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h2 style="color: #cccccc;">Indian Game Development Studio</h2>
-        <img src="https://pbs.twimg.com/profile_images/1831807653015650304/xBvTXddb_400x400.jpg" alt="Profile Image" class="profile-image">
-        <h1>Fabled India Games</h1>
-        <h2>Crafting immersive adventures inspired by India's rich legends and myths.</h2>
-        <div class="social-links">
-            <a href="https://twitter.com/fabledindia" target="_blank">Twitter</a>
-            <a href="https://www.youtube.com/@fabledindiagames" target="_blank">YouTube</a>
-            <a href="https://medium.com/@fabledindia" target="_blank">Blog</a>
-            <a href="https://ko-fi.com/fabledindiagames" target="_blank">Ko-fi Donation</a>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home" class="paper-btn btn-primary">Home</a>
+        <a href="#portfolio" class="paper-btn btn-primary">Portfolio</a>
+        <a href="#resume" class="paper-btn btn-primary">Resume</a>
+        <a href="#gallery" class="paper-btn btn-primary">Gallery</a>
+        <a href="#services" class="paper-btn btn-primary">Services</a>
+        <a href="#blog" class="paper-btn btn-primary">Blog</a>
+        <a href="#contact" class="paper-btn btn-primary">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <p class="seo-text">Indian Game Development Studio</p>
+        <img src="https://pbs.twimg.com/profile_images/1831807653015650304/xBvTXddb_400x400.jpg" alt="Profile Image" class="logo">
+        <h1 class="title">Fabled India Games</h1>
+        <p class="tagline">Crafting immersive adventures inspired by India's rich legends and myths.</p>
+        <div class="social-buttons">
+            <a href="https://www.youtube.com/@fabledindiagames" target="_blank" class="paper-btn btn-secondary">Youtube</a>
+            <a href="https://www.twitch.tv/indorijugaad" target="_blank" class="paper-btn btn-secondary">Twitch</a>
+            <a href="https://medium.com/@fabledindia" target="_blank" class="paper-btn btn-secondary">Blog</a>
+            <a href="https://x.com/fabledindia" target="_blank" class="paper-btn btn-secondary">Twitter</a>
+            <a href="https://ko-fi.com/fabledindia" target="_blank" class="paper-btn btn-secondary">Ko-Fi</a>
         </div>
-        <footer>
-            <p>&copy; 2024 Fabled India Games. All rights reserved.</p>
-        </footer>
+    </section>
+
+    <!-- Portfolio Section -->
+<!-- Portfolio Section -->
+<section id="portfolio" class="section">
+    <h2 class="title">Portfolio</h2>
+    <p>Check out some of my past work.</p>
+    <h3>Skills:</h3>
+    <ul>
+        <li>Unity3d and Godot (2D & 3D game design)</li>
+        <li>Multiplayer (UNet, Photon/Bolt, Mirror)</li>
+        <li>Cross-platform design (Android, iOS, Web, Windows, MacOS, Linux)</li>
+        <li>VR & AR game design (Oculus, Meta Quest, Google Cardboard)</li>
+        <li>Version control with Git & GitHub</li>
+        <li>Jira for game testing and bug tracking</li>
+        <li>AI prompt engineering and image generation using GTX1070</li>
+    </ul>
+    <h3>Work Experience:</h3>
+    <p><strong>Hobbyist Game Designer</strong><br>
+    Multiple Platforms, Multiple Web Locations<br>
+    (2012 – Present)</p>
+    <ul>
+        <li>Designed and published numerous games using CoronaSDK, HTML, Unity3d, Core Games, Unreal, Godot</li>
+        <li>Published games on Google PlayStore, Facebook.com, Kongregate.com, Newground.com, Y8 Games</li>
+        <li>Few samples at: <a href="https://retrovr.itch.io" target="_blank">https://retrovr.itch.io</a></li>
+    </ul>
+    <h3>Certifications:</h3>
+    <ul>
+        <li>Microsoft Azure AZ900 Cloud Infrastructure Certification by Microsoft</li>
+        <li>Google IT Professional Certification by Google</li>
+        <li>A Complete Guide to Game Design by HP (Hewlett-Packard)</li>
+        <li>From Code to Creation: Mastering Game Programming by HP (Hewlett-Packard)</li>
+        <li>The What and How of Esports Management by HP (Hewlett-Packard)</li>
+    </ul>
+    <h3>Achievements:</h3>
+    <ul>
+        <li>Achieved 3rd place in the 2021 Global Game Jam (GGJ) Core Diversifier category, awarded $1,000 USD.</li>
+        <li>Achieved 3rd place in the Holiday Jam by Core Games (Manticore Games), awarded $500 USD.</li>
+        <li>Achieved 3rd place in the Survival Jam by Core Games (Manticore Games), awarded $200 USD.</li>
+        <li>Participated in numerous itch.io game jams for over 10 years.</li>
+        <li>Invitation to GDC San Francisco as a Kongregate game developer by Kongregate.com (Revenue: $1000)</li>
+    </ul>
+</section>
+
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <h2 class="title">Resume</h2>
+        <p>Please email with your company email at support@fabledindia.com to request my professional resume. <a href="#contact"> email here</a>..</p>
+    </section>
+
+    <!-- Gallery Section with 9 public domain images -->
+<section id="gallery" class="section background-success">
+    <h2 class="title">Gallery</h2>
+    <div class="gallery">
+        <a href="https://pbs.twimg.com/media/GWp1AhvXsAAgAuX?format=jpg&name=900x900" target="_blank">
+            <img src="https://pbs.twimg.com/media/GWp1AhvXsAAgAuX?format=jpg&name=small" alt="Gallery Image 1">
+        </a>
+        <a href="https://pbs.twimg.com/media/GWFzhyfWcAEb75K?format=png&name=small" target="_blank">
+            <img src="https://pbs.twimg.com/media/GWFzhyfWcAEb75K?format=png&name=small" alt="Gallery Image 2">
+        </a>
+        <a href="https://pbs.twimg.com/media/GWEamNcXQAAbVDp?format=png&name=small" target="_blank">
+            <img src="https://pbs.twimg.com/media/GWEamNcXQAAbVDp?format=png&name=small" alt="Gallery Image 3">
+        </a>
+        <a href="https://pbs.twimg.com/media/GW4Db7fXEAAmHNz?format=png&name=900x900" target="_blank">
+            <img src="https://pbs.twimg.com/media/GW4Db7fXEAAmHNz?format=png&name=small" alt="Gallery Image 4">
+        </a>
+        <a href="https://pbs.twimg.com/media/GW5Tmo6b0AAWZZd?format=jpg&name=900x900" target="_blank">
+            <img src="https://pbs.twimg.com/media/GW5Tmo6b0AAWZZd?format=jpg&name=small" alt="Gallery Image 5">
+        </a>
+        <a href="https://i.imgur.com/CXAGL2w.png" target="_blank">
+            <img src="https://i.imgur.com/CXAGL2w.png" alt="Gallery Image 6">
+        </a>
+        <a href="https://i.imgur.com/zBj7LHU.png" target="_blank">
+            <img src="https://i.imgur.com/zBj7LHU.png" alt="Gallery Image 7">
+        </a>
+		<a href="https://pbs.twimg.com/media/GWp1AlBWcAAaPX5?format=jpg&name=large" target="_blank">
+            <img src="https://pbs.twimg.com/media/GWp1AlBWcAAaPX5?format=jpg&name=large" alt="Gallery Image 8">
+        </a>
+		<a href="https://pbs.twimg.com/media/GWEamOiWIAAqj93?format=png&name=900x900" target="_blank">
+            <img src="https://pbs.twimg.com/media/GWEamOiWIAAqj93?format=png&name=900x900" alt="Gallery Image 9">
+        </a>
     </div>
+</section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <h2 class="title">Services</h2>
+        <p>I offer a variety of gaming services including Virtual Reality VR, Mobile, Web and Computer game design, web development, logo design, and consulting. I also offer game play testing, game live streaming on twitch, kick, youtube live.</p>
+     </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <h2 class="title">Blog</h2>
+        <p>Read my game design and AI technology blog on <a href="https://medium.com/@fabledindia" target="_blank">Medium</a>.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="title">Contact</h2>
+        <form action="mailto:support@fabledindia.com" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" class="paper-input" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" class="paper-input" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" class="paper-input no-resize" required></textarea>
+            </div>
+            <button type="submit" class="paper-btn btn-success">Send Email</button>
+        </form>
+    </section>
+
+    <!-- Footer with Social Buttons -->
+    <footer>
+        <h3>Connect with us</h3>
+        <div class="social-buttons">
+            <a href="https://www.youtube.com/@fabledindiagames" target="_blank" class="text-secondary">Youtube</a>
+            <a href="https://www.twitch.tv/indorijugaad" target="_blank" class="text-secondary">Twitch</a>
+            <a href="https://medium.com/@fabledindia" target="_blank" class="text-secondary">Blog</a>
+            <a href="https://x.com/fabledindia" target="_blank" class="text-secondary">Twitter</a>
+            <a href="https://ko-fi.com/fabledindia" target="_blank" class="text-secondary">Ko-Fi</a>
+        </div>
+        <p>&copy; 2024 FabledIndia.com. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Open Images in Full Size -->
+    <script>
+        function openImage(imgElement) {
+            const imgSrc = imgElement.src;
+            const newWindow = window.open();
+            newWindow.document.write('<img src="' + imgSrc + '" style="width:100%; height:auto;">');
+        }
+    </script>
+
 </body>
 </html>
