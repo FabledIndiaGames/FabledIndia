@@ -184,7 +184,29 @@ margin-bottom: 100px; /* Adds space below the button */
   .download-button:hover {
     background-color: #0056b3; /* Darker color on hover */
   }
-		
+
+/* YouTube Gallery Section */
+.youtube-gallery {
+    display: flex;
+    justify-content: center; /* Center gallery horizontally */
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+}
+
+.youtube-gallery a {
+    display: block;
+    width: 120px; /* Adjust width as needed for smaller placeholders */
+    height: 90px; /* Adjust height to maintain aspect ratio */
+}
+
+.youtube-gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the placeholder */
+    cursor: pointer;
+}
     </style>
 </head>
 <body>
