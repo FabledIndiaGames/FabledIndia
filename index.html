@@ -73,19 +73,22 @@
             text-align: center;
         }
 
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 15px;
-            padding: 40px;
-        }
+/* Gallery Section */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Set minimum size similar to YouTube placeholders */
+    gap: 15px;
+    padding: 40px;
+    justify-content: center; /* Center the gallery horizontally */
+}
 
-        .gallery img {
-            width: 100%;
-            height: auto;
-            cursor: pointer;
-            border-radius: 8px;
-        }
+.gallery img {
+    width: 120px; /* Set a fixed width */
+    height: 90px; /* Set a fixed height to match the YouTube placeholders */
+    object-fit: cover; /* Ensure images cover the placeholder without distortion */
+    border-radius: 8px;
+    cursor: pointer;
+}
 
         .form-group {
             margin-bottom: 15px;
@@ -116,44 +119,22 @@
 			
         }
 
-        /* Media Queries for Mobile Devices */
-        @media (max-width: 768px) {
-            .title {
-                font-size: 3rem;
-            }
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Smaller size for mobile */
+    }
 
-            .tagline {
-                font-size: 0.9rem;
-            }
+    .gallery img {
+        width: 80px; /* Adjust width for smaller screens */
+        height: 60px; /* Adjust height for smaller screens */
+    }
+}
 
-            .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            }
-        }
-
-        @media (max-width: 481px) {
-            .seo-text {
-                font-size: 1rem;
-            }
-
-            .logo {
-                width: 120px;
-                height: 120px;
-            }
-
-            .title {
-                font-size: 1.2rem;
-            }
-
-            .tagline {
-                font-size: 0.8rem;
-            }
-
-            .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-            }
-
-        }
+@media (max-width: 481px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Smaller size for very small screens */
+    }
 
  .image-container {
     margin-top: 10px; /* Adds space above the button */
@@ -184,8 +165,34 @@ margin-bottom: 100px; /* Adds space below the button */
   .download-button:hover {
     background-color: #0056b3; /* Darker color on hover */
   }
-		
+
+/* YouTube Gallery Section */
+.youtube-gallery {
+    display: flex;
+    justify-content: center; /* Center gallery horizontally */
+    gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding: 20px;
+}
+
+.youtube-gallery a {
+    display: block;
+    width: 120px; /* Adjust width as needed for smaller placeholders */
+    height: 90px; /* Adjust height to maintain aspect ratio */
+}
+
+.youtube-gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the placeholder */
+    cursor: pointer;
+}
+
     </style>
+
+
+
 </head>
 <body>
 
@@ -216,40 +223,41 @@ margin-bottom: 100px; /* Adds space below the button */
     <!-- Portfolio Section -->
 	<section id="portfolio" class="section">
     <h6 class="title">Portfolio</h6>
-    <p>Check out some of my past work.</p>
-    <h8>Skills:</h8>
+    <p>Check out some of my past work under gallery.</p>
+    <h4>Skills and Work Experience:</h4>
     <ul>
-        <li>Unity3d and Godot (2D & 3D game design)</li>
-        <li>Multiplayer (UNet, Photon/Bolt, Mirror)</li>
-        <li>Cross-platform design (Android, iOS, Web, Windows, MacOS, Linux)</li>
-        <li>VR & AR game design (Oculus, Meta Quest, Google Cardboard)</li>
-        <li>Version control with Git & GitHub</li>
-        <li>Jira for game testing and bug tracking</li>
-        <li>AI prompt engineering and image generation using GTX1070</li>
+        <p>Unity3d and Godot (2D & 3D game design),</p>
+        <p>Multiplayer (UNet, Photon/Bolt, Mirror),</p>
+        <p>Cross-platform design (Android, iOS, Web, Windows, MacOS, Linux),</p>
+        <p>VR & AR game design (Oculus, Meta Quest, Google Cardboard),</p>
+        <p>Version control with Git & GitHub,</p>
+        <p>Jira for game testing and bug tracking,</p>
+        <p>AI prompt engineering and image generation using GTX1070</p>
     </ul>
-    <p><strong>Hobbyist Game Designer</strong><br>
+		
+    <h4>Game Designer Work Experience:</h4>
     Plublished games to Multiple Platforms PC, Linux, Windows,MacOS, iOS, Android and Multiple Websites<br>
-    (2012 – Present)</p>
+    (2012 – Present),</p>
     <ul>
-        <li>Designed and published numerous games using CoronaSDK, HTML, Unity3d, Core Games, Unreal, Godot</li>
-        <li>Published games on Google PlayStore, Facebook.com, Kongregate.com, Newground.com, Y8 Games</li>
-        <li>Few samples at: <a href="https://retrovr.itch.io" target="_blank">https://retrovr.itch.io</a></li>
+        <p>Designed and published numerous games using CoronaSDK, HTML, Unity3d, Core Games, Unreal, Godot,</p>
+        <p>Published games on Google PlayStore, Facebook.com, Kongregate.com, Newground.com, Y8 Games,</p>
+        <p>Few samples at: <a href="https://retrovr.itch.io" target="_blank">https://retrovr.itch.io</a></p>
     </ul>
     <h4>Certifications:</h4>
     <ul>
-        <li>Microsoft Azure AZ900 Cloud Infrastructure Certification by Microsoft</li>
-        <li>Google IT Professional Certification by Google</li>
-        <li>A Complete Guide to Game Design by HP (Hewlett-Packard)</li>
-        <li>From Code to Creation: Mastering Game Programming by HP (Hewlett-Packard)</li>
-        <li>The What and How of Esports Management by HP (Hewlett-Packard)</li>
+        <p>Microsoft Azure AZ900 Cloud Infrastructure Certification by Microsoft</p>
+        <p>Google IT Professional Certification by Google</p>
+        <p>A Complete Guide to Game Design by HP (Hewlett-Packard)</p>
+        <p>From Code to Creation: Mastering Game Programming by HP (Hewlett-Packard)</p>
+        <p>The What and How of Esports Management by HP (Hewlett-Packard)</p>
     </ul>
     <h4>Achievements:</h4>
     <ul>
-        <li>Achieved 3rd place in the 2021 Global Game Jam (GGJ) Core Diversifier category, awarded $1000 USD.</li>
-        <li>Achieved 3rd place in the Holiday Jam by Core Games (Manticore Games), awarded $500 USD.</li>
-        <li>Achieved 3rd place in the Survival Jam by Core Games (Manticore Games), awarded $200 USD.</li>
-        <li>Participated in numerous itch.io game jams for over 10 years.</li>
-        <li>Invitation to GDC San Francisco as a Kongregate game developer by Kongregate.com (Revenue: $1000 USD)</li>
+        <p>Achieved 3rd place in the 2021 Global Game Jam (GGJ) Core Diversifier category, awarded $1000 USD.</p>
+        <p>Achieved 3rd place in the Holiday Jam by Core Games (Manticore Games), awarded $500 USD.</p>
+        <p>Achieved 3rd place in the Survival Jam by Core Games (Manticore Games), awarded $200 USD.</p>
+        <p>Participated in numerous itch.io game jams for over 10 years.</p>
+        <p>Invitation to GDC San Francisco as a Kongregate game developer by Kongregate.com (Revenue: $1000 USD)</p>
     </ul>
 </section>
 
@@ -275,9 +283,6 @@ margin-bottom: 100px; /* Adds space below the button */
         <a href="https://pbs.twimg.com/media/GW4Db7fXEAAmHNz?format=png&name=900x900" target="_blank">
             <img src="https://pbs.twimg.com/media/GW4Db7fXEAAmHNz?format=png&name=small" alt="Gallery Image 4">
         </a>
-        <a href="https://pbs.twimg.com/media/GW5Tmo6b0AAWZZd?format=jpg&name=900x900" target="_blank">
-            <img src="https://pbs.twimg.com/media/GW5Tmo6b0AAWZZd?format=jpg&name=small" alt="Gallery Image 5">
-        </a>
         <a href="https://i.imgur.com/CXAGL2w.png" target="_blank">
             <img src="https://i.imgur.com/CXAGL2w.png" alt="Gallery Image 6">
         </a>
@@ -293,6 +298,24 @@ margin-bottom: 100px; /* Adds space below the button */
     </div>
 </section>
 
+<!-- YouTube Gallery Section -->
+<section id="youtube-gallery" class="section">
+    <h6 class="title">YouTube Gallery</h6>
+    <div class="youtube-gallery">
+        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID1" target="_blank">
+            <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID1/0.jpg" alt="YouTube Video 1">
+        </a>
+        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID2" target="_blank">
+            <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID2/0.jpg" alt="YouTube Video 2">
+        </a>
+        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID3" target="_blank">
+            <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID3/0.jpg" alt="YouTube Video 3">
+        </a>
+        <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID4" target="_blank">
+            <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID4/0.jpg" alt="YouTube Video 4">
+        </a>
+    </div>
+</section>
     <!-- Services Section -->
     <section id="services" class="section">
         <h6 class="title">Services</h6>
@@ -324,6 +347,7 @@ margin-bottom: 100px; /* Adds space below the button */
             <button type="submit" class="paper-btn btn-success">Send Email</button>
         </form>
     </section>
+
 
     <!-- Footer -->
     <footer>
