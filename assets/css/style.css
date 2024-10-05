@@ -74,7 +74,7 @@
    */
 
   /* font-family */
-  --ff-poppins: 'poppins', sans-serif;
+  --ff-laila: 'laila', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -153,7 +153,7 @@ input, textarea {
 
 :focus { outline-color: var(--orange-yellow-crayola); }
 
-html { font-family: var(--ff-poppins); }
+html { font-family: var(--ff-laila); }
 
 body { background: var(--smoky-black); }
 
