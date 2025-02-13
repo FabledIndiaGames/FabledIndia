@@ -1901,4 +1901,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   background-position: center;
   animation: bgSlideshow 12s infinite;
 }
+body {
+  background: none !important;
+}
 
