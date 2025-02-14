@@ -703,7 +703,7 @@ border-radius: 20px;    /* before 20px*/
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
-  color: var(--light-gray);
+  color: var(--eerie-black-2);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -1029,7 +1029,7 @@ border-radius: 20px;    /* before 20px*/
 }
 
 .timeline-text {
-  color: var(--light-gray);
+  color: var(--eerie-black-2);
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
@@ -1092,7 +1092,7 @@ border-radius: 20px;    /* before 20px*/
 
 .filter-select {
   background: var(--eerie-black-2);  
-  color: var(--light-gray);
+  color: var(--eerie-black-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
