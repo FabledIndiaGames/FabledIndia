@@ -155,7 +155,7 @@ input, textarea {
 
 html { font-family: var(--ff-laila); }
 
-body { background: var(--carbon-gray); }  /* main background color *\
+body {background: url('assets/images/128.ico') repeat;}  /* main background color, Original- body { background: var(--carbon-gray); }  *\
 
 
 
