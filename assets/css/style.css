@@ -156,7 +156,7 @@ input, textarea {
 
 html { font-family: var(--ff-laila); }
 
-body {background: url(--carbon-gray) repeat;}  /* main background color, Original- body { background: var(--carbon-gray); }  *\
+body {background: var(--carbon-gray);}  /* main background color, Original- body { background: var(--carbon-gray); }  *\
 
 
 
