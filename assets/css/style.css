@@ -68,7 +68,7 @@
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
-
+  --carbon-gray: hsla(200, 15%, 10%, 1);
   /**
    * typography
    */
@@ -155,7 +155,7 @@ input, textarea {
 
 html { font-family: var(--ff-laila); }
 
-body { background: var(--smoky-black); }  
+body { background: var(--carbon-gray); }  /* main background color *\
 
 
 
