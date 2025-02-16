@@ -1186,7 +1186,7 @@ border-radius: 20px;    /* before 20px*/
 .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
 .project-item-icon-box {
-  --scale: 1.4;
+  --scale: 5;
 
   background: var(--jet);
   color: var(--orange-yellow-crayola);
