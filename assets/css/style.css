@@ -979,7 +979,9 @@ border-radius: 20px;    /* before 20px*/
 
 
 
+/*-----------------------------------*\
 
+	
 
 /*-----------------------------------*\
   #RESUME
@@ -1090,8 +1092,7 @@ border-radius: 20px;    /* before 20px*/
 }
 
 
-
-
+\*-----------------------------------*/
 
 
 
@@ -3782,4 +3783,5 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
 
