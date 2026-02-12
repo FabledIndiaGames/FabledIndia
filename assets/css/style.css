@@ -148,7 +148,7 @@ input, textarea {
 }
 
 ::selection {
-  background: hsl(0, 0%, 40%); /*-- background: var(--orange-yellow-crayola); --*/
+  background: var(--orange-yellow-crayola);
   color: var(--smoky-black);  
 }
 
@@ -665,7 +665,7 @@ border-radius: 20px;    /* before 20px*/
   bottom: 0;
   left: 0;
   width: 100%;
-  background: hsla(240, 1%, 17%, 0.75);
+  background: hsl(0, 0%, 40%); /*-- background: hsla(240, 1%, 17%, 0.75); --*/
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
   border-radius: 12px 12px 0 0;
@@ -3767,6 +3767,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
 
 
 
