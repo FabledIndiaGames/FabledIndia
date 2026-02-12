@@ -148,7 +148,7 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--orange-yellow-crayola);
+  background: hsl(0, 0%, 40%); /*-- background: var(--orange-yellow-crayola); --*/
   color: var(--smoky-black);  
 }
 
@@ -3767,6 +3767,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
 
 
 
