@@ -56,6 +56,10 @@
 
   /* solid */
 
+  --muted-blue: hsl(216, 36%, 50%);  /* #83A1CD - soft blue, for links, added by me */
+
+
+
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(0, 0%, 90%);
   --eerie-black-1: hsl(240, 2%, 13%);
@@ -126,7 +130,7 @@
   box-sizing: border-box;
 }
 
-a { color: var(--orange-yellow-crayola);        /*  this is missing-- color: inherit;  */
+a { color: var(--muted-blue);        /*  this is missing-- color: inherit;  */
    text-decoration: none;
    font-style: italic;
   }
@@ -334,7 +338,7 @@ article {
   box-sizing: border-box;
 }
 
-a { color: var(--orange-yellow-crayola);
+a { color: var(--muted-blue);
    text-decoration: none;
    font-style: italic;
   }
@@ -3773,6 +3777,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
 
 
 
