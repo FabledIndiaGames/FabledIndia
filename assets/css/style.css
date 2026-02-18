@@ -57,7 +57,7 @@
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
+  --onyx: hsl(0, 0%, 90%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
@@ -263,7 +263,7 @@ article {
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
+  --onyx: hsl(0, 0%, 90%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
   --smoky-black: hsl(0, 0%, 7%);
@@ -3767,6 +3767,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
 
 
 
