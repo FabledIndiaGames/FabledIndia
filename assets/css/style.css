@@ -552,7 +552,7 @@ border-radius: 20px;    /* before 20px*/
 
 .info-content .title {
   color: var(--white-1);
-  background: var(--eerie-black-2);      /*default was   --onyx*/
+  background: var(--jet);      /*default was   (--onyx) */
   font-size: var(--fs-8);
   font-weight: var(--fw-300);
   width: max-content;
@@ -3767,6 +3767,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
 
 
 
